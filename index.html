@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- BOOTSTRAP -->
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    body {
+      background-color: #ffffe3;
+    }
+
+
+
+    /* .................card-one.......................... */
+
+
+
+
+
+    .card-one {
+      margin: auto;
+      height: 27rem;
+      width: 20rem;
+      text-align: center;
+      border-radius: 1.5rem;
+
+      background-image: -webkit-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: -moz-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: -ms-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: -o-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+  
+
+   position: relative;
+   left: auto;
+
+
+      margin-top: 12rem;
+    }
+
+    .your-result {
+      padding: 1.5rem 3rem;
+      color: #ffffff;
+      opacity: 60%;
+    }
+
+    /* ...........................circle................. */
+
+
+
+    .score-circle {
+      margin: auto;
+
+
+      background-image: -webkit-linear-gradient(top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      background-image: -moz-linear-gradient(top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      background-image: -ms-linear-gradient(top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      background-image: -o-linear-gradient(top, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+
+
+      border-radius: 60%;
+      width: 10rem;
+      height: 10rem;
+      text-align: center;
+
+    }
+
+    .scr-1 {
+      font-size: 4rem;
+      color: #ffffff;
+      margin: auto;
+      padding-top: 1.5rem;
+    }
+
+    .scr-2 {
+      color: #ffffff;
+      opacity: 60%;
+      margin: auto;
+      padding-bottom: 1.5rem;
+
+    }
+
+    .gr8 {
+      padding-top: 2rem;
+      color: #ffffff;
+    }
+
+    .congrats {
+      color: #ffffff;
+      opacity: 60%;
+      padding-bottom: 2rem;
+    }
+
+
+
+    /* ............................CARD 2.................................. */
+
+
+    .card-two {
+      margin: auto;
+      position: relative;
+      z-index: -1;
+      left: 20rem;
+      bottom: 27rem;
+      border-top-right-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      background-color: #ffffff;
+      width: 24rem;
+      height: 27rem;
+      position: relative;
+      right: auto;
+    }
+
+    .summary {
+      margin-left: 4rem;
+      text-align: center;
+      padding-top: 2rem;
+      color: #383c5c;
+      text-align: left;
+    }
+
+    /* ..........................Skills...................................... */
+
+
+    .skill {
+      position: relative;
+      left: 1rem;
+      border-radius: 0.5rem;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
+      width: 18rem;
+    }
+
+    .s1 {
+      background-color: #fff6f5;
+    }
+
+    .s2 {
+      background-color: #fffbf2;
+    }
+
+    .s3 {
+      background-color: #f2fbfa;
+    }
+
+    .s4 {
+      background-color: #f3f3fd;
+      margin-bottom: 2rem;
+    }
+
+    h6 {
+      display: inline;
+    }
+
+    .ech1 {
+      color: #d36d6c;
+    }
+
+    .ech2 {
+      color: #f7b738;
+    }
+
+    .ech3 {
+      color: #34af90;
+    }
+
+    .ech4 {
+      color: #4c51a0;
+    }
+
+    p {
+      display: inline;
+      color: #383c5c;
+
+
+    }
+
+    .rec {
+      padding-left: 6rem;
+    }
+
+    text {
+      opacity: 60%;
+    }
+
+    .btn {
+
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      color: #ffffff;
+      font-size: 18px;
+      background: #303b59;
+      padding: 10px 70px 10px 70px;
+      text-decoration: none;
+      font-weight: 500;
+      width: 18rem;
+      margin: auto;
+      z-index: 1;
+    }
+
+    .btn:hover {
+      background: #303b59;
+  background-image: -webkit-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: -moz-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: -ms-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: -o-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-decoration: none;
+  
+  z-index: 1;
+  
+  
+
+}
+
+    
+  </style>
+</head>
+
+<center>
+
+<main class="container-fluid">
+
+
+  <!-- ...............CARD-ONE.................... -->
+
+  <div class="container-fluid card-one">
+
+
+    <h4 class="your-result"> Your Result </h4>
+
+
+    <!-- ...................................CIRCLE..................... -->
+
+    <div class="score-circle">
+
+      <h1 class="scr-1"> <b> 76 </b> </h1>
+      <p class="scr-2">of 100</p>
+
+    </div>
+
+    <h2 class="gr8"> Great </h2>
+
+    <p class="congrats"> You scored higher than 65% of <br> the people who have taken <br> these tests. </p>
+
+
+  </div>
+
+
+
+
+
+
+  <!-- .... -->
+
+
+  <div class="card-two">
+
+
+
+    <h3 class="summary"><b>Summary</b></h3>
+
+    <div class="skill s1">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+        <path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+          d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z" />
+      </svg>
+
+
+      <h6 class="ech1"> Reaction </h6>
+      <p class="rec"> <b> 80 <text> / 100 </b></text> </p>
+    </div>
+
+
+
+
+
+    <div class="skill s2">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+        <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+          d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858" />
+        <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+          d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858" />
+        <path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+          d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0" />
+      </svg>
+
+      <h6 class="ech2"> Memory</h6>
+      <p class="rec"> <b>92 <text> / 100 </b></text> </p>
+    </div>
+
+
+
+
+
+    <div class="skill s3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+        <path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+          d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z" />
+      </svg>
+      <h6 class="ech3"> Verbal </h6>
+      <p style="padding-left: 7rem;"> <b>61<text> / 100 </b> </text> </p>
+    </div>
+
+
+
+
+    <div class="skill s4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+        <path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+          d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z" />
+        <path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+          d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z" />
+      </svg>
+      <h6 class="ech4"> Visual</h6>
+      <p style="padding-left: 7rem;"><b> 72 <text> / 100</b> </text> </p>
+    </div>
+
+
+
+    <button class="btn" > Continue </button>
+
+
+
+  </div>
+
+
+
+
+</main>
+
+
+<!-- ...... -->
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="#">JigSaeb_5655</a>.
+</div>
+
+
+
+
+</center>
+</html>
